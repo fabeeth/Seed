@@ -1,0 +1,302 @@
+body {
+    background-color: #050505;
+}
+header {
+    background-color: #050505;
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+    user-select: none;
+}
+@font-face {
+    font-family: Genshin;
+    src: url(fonts/Genshin.ttf);
+}
+header h1 {
+    color: white;
+    font-size: 32px;
+    font-family: Genshin;
+}
+.header-left {
+    position: absolute;
+    left: 46px;
+}
+.header-center {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.header-center p {
+    color: white;
+    font-family: Genshin;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.header-center p:hover {
+    transition: 0.5s;
+    color: #D9FC00;
+}
+.header-center button {
+    background-color: transparent;
+    border: 0px;
+}
+.header-right {
+    position: absolute;
+    right: 46px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    
+}
+
+
+.copy {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #D9FC00;
+    border: 0px;
+    cursor: pointer;
+}
+main {
+    
+    margin-top: 150px;
+    text-align: center;
+    user-select: none;
+}
+.voiti {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 48px;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+main h2 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 48px;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+main h1 {
+    text-align: center;
+    font-family: Genshin;
+    font-size: 64px; 
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: 10;
+    
+    
+}
+.color-change:hover {
+    color:#D9FC00;
+   
+}
+.color-change span{
+    z-index: 10;
+}
+#text {
+    z-index: 10;
+}
+.main-left {
+    position: absolute;
+    left: 82px;
+    width: 240px;
+    transform: perspective(1000px) rotateY(20deg);
+    cursor: pointer;
+}
+.main-left:hover {
+    transition: 0.5s;
+    transform: perspective(1000px) rotateY(15deg);
+}
+.main-left p {
+    font-family: Genshin;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+}
+#comment {
+    font-family: Genshin;
+    color: #D9FC00;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: underline 2px;
+}
+#comment img {
+    margin-left: 10px;
+}
+.main-center {
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-right {
+    position: absolute;
+    right: 82px;
+    width: 240px;
+   
+    cursor: pointer;
+}
+.main-right:hover {
+    transition: 0.5s;
+    transform: perspective(1000px) rotateY(-15deg);
+}
+.social {
+    background-color: #D9FC00;
+    width: 100%;
+    height: 283px;
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+}
+.social h1 {
+    font-family: Genshin;
+    font-size: 32px;
+    color: black;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 63px;
+    top: 30px;
+}
+.social hr {
+    background-color: black;
+    position: absolute;
+    left: 63px;
+    top: 90px;
+    width: 155px;
+    height: 4px;
+    border: 0px;
+    border-radius: 20px;
+    animation: hr 5s infinite;
+}
+@keyframes hr{
+    0% {
+       transform: translateX(0px);
+       width: 155px;
+    }
+    25% {
+        transform: translateX(260px);
+        width: 105px;
+    }
+    50% {
+        transform: translateX(0px);
+        width: 55px;
+    }
+    75% {
+        transform: translateX(260px);
+        width: 105px;
+    }
+    100% {
+        transform: translateX(0px);
+        width: 155px;
+    }
+}
+.social-conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-conteiner button:hover {
+    transition: 0.3s;
+    box-shadow: 15px 5px 4px black;
+}
+.uslug {
+    position: absolute;
+    top: 1350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.uslug-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.uslug-1 h1 {
+    color: #D9FC00;
+    font-family: Genshin;
+    font-size: 36px;
+}
+.uslug-1 h1 span {
+    color: white;
+    font-family: Genshin;
+    font-size: 48px;
+}
+.uslug-1 hr {
+    margin-left: 100px;
+    background-color: #1B1C1E;
+    border: 0px;
+    width: 5px;
+    height: 111px;
+}
+.uslug-1 p {
+    color: #1B1C1E;
+    font-family: Genshin;
+    font-size: 24px;
+    text-align: center;
+    width: 400px;
+    
+}
+.button1 {
+    width: 55px;
+    height: 99px;
+    border-radius: 15px;
+    background-color: #050505;
+    border: 3px solid #1B1C1E;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.button2 {
+    width: 55px;
+    height: 99px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.card-button1 {
+    background-image: url(img/Rectangle\ 12.png);
+    background-color: transparent;
+    border: 0px;
+    width: 232px;
+    height: 85px;
+    color: white;
+    font-family: Genshin;
+    font-size: 16px;
+   transform: translateX(130px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
